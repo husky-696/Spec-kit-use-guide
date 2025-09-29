@@ -1,4 +1,4 @@
-# Spec-kit-use-guide
+#Spec-kit-use-guide
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -30,19 +30,10 @@ GitHub Spec Kit is an open-source toolkit designed for Spec-Driven Development (
 ### Installation
 
 Clone the Spec Kit repository locally:
-
-```
 git clone https://github.com/github/spec-kit.git
 cd spec-kit
-```
-
 Explore core template files:
-
-```
-ls templates/
-# plan-template.md  spec-template.md  tasks-template.md
-```
-
+ls templates/plan-template.md  spec-template.md  tasks-template.md
 ---
 
 ## Quick Start Guide
@@ -50,43 +41,47 @@ ls templates/
 Replace `project-name` and `feature-name` accordingly throughout.
 
 1. Initialize a new Spec Kit workspace (if starting fresh):
-
-```
 specify init project-name
-```
-
 2. Create a baseline specification for a feature:
-
-```
 specify /specify feature-name "Brief description of the feature to implement"
-```
-
 3. Generate the technical plan from the specification:
-
-```
 specify /plan feature-name
-```
-
 4. Create implementation tasks based on the plan:
-
-```
 specify /tasks feature-name
-```
+---
 
-5. Use AI tools (Windsurf, Gemini CLI, Codex, Copilot) to implement tasks:
+## Using Windsurf with Spec Kit for Coding
 
-- Windsurf: Connect via GitHub repo and run Spec Kit CLI commands for task generation and implementation.
-- Gemini CLI: Run Spec Kit commands within Gemini project folder with API keys configured.
-- Codex: Use Codex CLI or IDE extensions to consume specs and assist coding.
-- GitHub Copilot: Use Copilot CLI or IDE integration alongside Spec Kit for smooth coding workflow.
+Windsurf enhances your coding by integrating with GitHub Spec Kit to assist in task generation and implementation.
+
+1. **Connect Your GitHub Repository**
+
+Make sure your GitHub repo with Spec Kit is cloned locally.
+
+2. **Open Windsurf Editor**
+
+Launch Windsurf and connect it to your local repository folder.
+
+3. **Run Spec Kit Commands in Windsurf Terminal**
+
+You can run Spec Kit commands inside Windsurf to interactively generate or implement tasks, e.g.:
+specify /tasks feature-name
+specify /implement feature-name
+4. **Leverage AI Code Suggestions**
+
+Use Windsurf’s AI-powered editor to get contextual code suggestions based on Spec Kit tasks and specs for faster development.
+
+5. **Commit and Push Changes**
+
+After implementing, commit your changes and push them back to GitHub to keep your specs and code synchronized.
+
+For more details, watch the [Windsurf GitHub Spec Kit tutorial](https://youtu.be/XGiwp7RlV0c).
 
 ---
 
 ## Folder Structure
 
 The Spec Kit workspace organizes project files as follows for clarity and version control:
-
-```
 .project-root/
 ├── .specify/
 │   ├── memory/
@@ -97,8 +92,6 @@ The Spec Kit workspace organizes project files as follows for clarity and versio
 ├── plans/
 ├── tasks/
 └── source-code/
-```
-
 ---
 
 ## Useful Links
